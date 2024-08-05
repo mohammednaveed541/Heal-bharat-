@@ -1,0 +1,30 @@
+Get all authors:
+
+sh
+Copy code
+curl http://127.0.0.1:5000/authors
+Add a new author:
+
+sh
+Copy code
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Author Name"}' http://127.0.0.1:5000/authors
+Get all books:
+
+sh
+Copy code
+curl http://127.0.0.1:5000/books
+Add a new book:
+
+sh
+Copy code
+curl -X POST -H "Content-Type: application/json" -d '{"title": "Book Title", "isbn": "1234567890123", "author_id": 1}' http://127.0.0.1:5000/books
+Get all members:
+
+sh
+Copy code
+curl http://127.0.0.1:5000/members
+Add a new member:
+
+sh
+Copy code
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Member Name", "email": "member@example.com"}' http://127.0.0.1:5000/members
